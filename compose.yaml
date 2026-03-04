@@ -1,0 +1,115 @@
+﻿version: "3.9"
+
+# ─────────────────────────────────────────────
+# AYWS — Infrastructure Stack
+# Başlat: docker compose up -d
+# ─────────────────────────────────────────────
+
+networks:
+  ayws-internal:
+    driver: bridge
+    name: ayws-internal
+
+volumes:
+  keycloak-db-data:
+  security-db-data:
+  pgadmin-data:
+
+services:
+
+  # ── Keycloak PostgreSQL ──────────────────────
+  keycloak-db:
+    image: postgres:16-alpine
+    container_name: ayws-keycloak-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${KEYCLOAK_DB_NAME}
+      POSTGRES_USER: ${KEYCLOAK_DB_USER}
+      POSTGRES_PASSWORD: ${KEYCLOAK_DB_PASSWORD}
+    volumes:
+      - keycloak-db-data:/var/lib/postgresql/data
+    ports:
+      - "${KEYCLOAK_DB_PORT}:5432"     # sadece geliştirme için, prod'da kaldır
+    networks:
+      - ayws-internal
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${KEYCLOAK_DB_USER} -d ${KEYCLOAK_DB_NAME}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Keycloak ────────────────────────────────
+  keycloak:
+    image: quay.io/keycloak/keycloak:${KEYCLOAK_VERSION}
+    container_name: ayws-keycloak
+    restart: unless-stopped
+    command: start-dev    # prod için → start (TLS zorunlu olur)
+    environment:
+      KC_DB: ${KC_DB}
+      KC_DB_URL: ${KC_DB_URL}
+      KC_DB_USERNAME: ${KC_DB_USERNAME}
+      KC_DB_PASSWORD: ${KC_DB_PASSWORD}
+      KC_BOOTSTRAP_ADMIN_USERNAME: ${KC_BOOTSTRAP_ADMIN_USERNAME}
+      KC_BOOTSTRAP_ADMIN_PASSWORD: ${KC_BOOTSTRAP_ADMIN_PASSWORD}
+      KC_HOSTNAME: ${KC_HOSTNAME}
+      KC_HOSTNAME_PORT: ${KC_HOSTNAME_PORT}
+      KC_HOSTNAME_STRICT: ${KC_HOSTNAME_STRICT}
+      KC_HOSTNAME_STRICT_HTTPS: ${KC_HOSTNAME_STRICT_HTTPS}
+      KC_HTTP_ENABLED: ${KC_HTTP_ENABLED}
+      KC_PROXY: ${KC_PROXY}
+      KC_LOG_LEVEL: ${KC_LOG_LEVEL}
+      # Health endpoint'i aktif et
+      KC_HEALTH_ENABLED: "true"
+      KC_METRICS_ENABLED: "true"
+    ports:
+      - "${KC_HOSTNAME_PORT}:8080"
+    depends_on:
+      keycloak-db:
+        condition: service_healthy
+    networks:
+      - ayws-internal
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/health/ready || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
+      start_period: 60s     # Keycloak başlaması zaman alır
+
+  # ── Security Service PostgreSQL ─────────────
+  security-db:
+    image: postgres:16-alpine
+    container_name: ayws-security-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${SECURITY_SERVICE_DB_NAME}
+      POSTGRES_USER: ${SECURITY_SERVICE_DB_USER}
+      POSTGRES_PASSWORD: ${SECURITY_SERVICE_DB_PASSWORD}
+    volumes:
+      - security-db-data:/var/lib/postgresql/data
+    networks:
+      - ayws-internal
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${SECURITY_SERVICE_DB_USER} -d ${SECURITY_SERVICE_DB_NAME}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── PgAdmin — Geliştirme aracı ──────────────
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: ayws-pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+    ports:
+      - "${PGADMIN_PORT}:80"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    depends_on:
+      - keycloak-db
+      - security-db
+    networks:
+      - ayws-internal
+    profiles:
+      - tools       # sadece: docker compose --profile tools up -d

@@ -1,0 +1,11 @@
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/bin/Debug/net10.0/Ayws.Security.Service.Domain.deps.json
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/bin/Debug/net10.0/Ayws.Security.Service.Domain.dll
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/bin/Debug/net10.0/Ayws.Security.Service.Domain.pdb
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/Ayws.Security.Service.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/Ayws.Security.Service.Domain.AssemblyInfoInputs.cache
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/Ayws.Security.Service.Domain.AssemblyInfo.cs
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/Ayws.Security.Service.Domain.csproj.CoreCompileInputs.cache
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/Ayws.Security.Service.Domain.dll
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/refint/Ayws.Security.Service.Domain.dll
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/Ayws.Security.Service.Domain.pdb
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/ref/Ayws.Security.Service.Domain.dll

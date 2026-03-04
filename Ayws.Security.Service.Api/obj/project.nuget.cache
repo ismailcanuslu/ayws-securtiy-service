@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "HCfXLXU6ngk=",
+  "success": true,
+  "projectFilePath": "/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Api/Ayws.Security.Service.Api.csproj",
+  "expectedPackageFiles": [
+    "/Users/ismailcanuslu/.nuget/packages/microsoft.aspnetcore.openapi/10.0.1/microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "/Users/ismailcanuslu/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

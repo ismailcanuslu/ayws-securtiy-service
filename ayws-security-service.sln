@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ayws.Security.Service.Api", "Ayws.Security.Service.Api\Ayws.Security.Service.Api.csproj", "{8E445590-1B65-4FFA-BAC6-C7C9D157785D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A9C144F1-1FEE-486B-9C20-1026513AA743}"
+	ProjectSection(SolutionItems) = preProject
+		compose.yaml = compose.yaml
+		.env = .env
+		CLAUDE.md = CLAUDE.md
+		gemini.md = gemini.md
+		agents.md = agents.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3AB49B56-2CB9-4161-A233-A9E226776666}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{52627DEB-59C7-4D1C-83E1-A7E958DEC7BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ayws.Security.Service.Application", "Ayws.Security.Service.Application\Ayws.Security.Service.Application.csproj", "{871A1C8F-18D8-4D0E-9598-AE4CA067B4F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ayws.Security.Service.Domain", "Ayws.Security.Service.Domain\Ayws.Security.Service.Domain.csproj", "{49A4B8CD-63A2-4EBB-839C-F6340D138CE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ayws.Security.Service.Infrastructure", "Ayws.Security.Service.Infrastructure\Ayws.Security.Service.Infrastructure.csproj", "{7E7ECDA0-12BB-43AB-B72D-0B3EA4A899D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ayws.Security.Service.Contracts", "Ayws.Security.Service.Contracts\Ayws.Security.Service.Contracts.csproj", "{0BE417E3-0624-4979-9186-77721D209013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ayws.Security.Service.IntegrationTests", "Ayws.Security.Service.IntegrationTests\Ayws.Security.Service.IntegrationTests.csproj", "{3FEAA9C1-DD3F-4DC4-834B-D735C7A3CAEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ayws.Security.Service.UnitTests", "Ayws.Security.Service.UnitTests\Ayws.Security.Service.UnitTests.csproj", "{8B1F29D1-E7FB-4413-8A4C-9326C72A74DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E445590-1B65-4FFA-BAC6-C7C9D157785D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E445590-1B65-4FFA-BAC6-C7C9D157785D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E445590-1B65-4FFA-BAC6-C7C9D157785D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E445590-1B65-4FFA-BAC6-C7C9D157785D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{871A1C8F-18D8-4D0E-9598-AE4CA067B4F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{871A1C8F-18D8-4D0E-9598-AE4CA067B4F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{871A1C8F-18D8-4D0E-9598-AE4CA067B4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{871A1C8F-18D8-4D0E-9598-AE4CA067B4F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49A4B8CD-63A2-4EBB-839C-F6340D138CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A4B8CD-63A2-4EBB-839C-F6340D138CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A4B8CD-63A2-4EBB-839C-F6340D138CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A4B8CD-63A2-4EBB-839C-F6340D138CE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E7ECDA0-12BB-43AB-B72D-0B3EA4A899D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E7ECDA0-12BB-43AB-B72D-0B3EA4A899D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E7ECDA0-12BB-43AB-B72D-0B3EA4A899D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E7ECDA0-12BB-43AB-B72D-0B3EA4A899D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BE417E3-0624-4979-9186-77721D209013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BE417E3-0624-4979-9186-77721D209013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BE417E3-0624-4979-9186-77721D209013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BE417E3-0624-4979-9186-77721D209013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FEAA9C1-DD3F-4DC4-834B-D735C7A3CAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FEAA9C1-DD3F-4DC4-834B-D735C7A3CAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FEAA9C1-DD3F-4DC4-834B-D735C7A3CAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FEAA9C1-DD3F-4DC4-834B-D735C7A3CAEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B1F29D1-E7FB-4413-8A4C-9326C72A74DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B1F29D1-E7FB-4413-8A4C-9326C72A74DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B1F29D1-E7FB-4413-8A4C-9326C72A74DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B1F29D1-E7FB-4413-8A4C-9326C72A74DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E445590-1B65-4FFA-BAC6-C7C9D157785D} = {3AB49B56-2CB9-4161-A233-A9E226776666}
+		{871A1C8F-18D8-4D0E-9598-AE4CA067B4F8} = {3AB49B56-2CB9-4161-A233-A9E226776666}
+		{49A4B8CD-63A2-4EBB-839C-F6340D138CE0} = {3AB49B56-2CB9-4161-A233-A9E226776666}
+		{7E7ECDA0-12BB-43AB-B72D-0B3EA4A899D1} = {3AB49B56-2CB9-4161-A233-A9E226776666}
+		{0BE417E3-0624-4979-9186-77721D209013} = {3AB49B56-2CB9-4161-A233-A9E226776666}
+		{3FEAA9C1-DD3F-4DC4-834B-D735C7A3CAEA} = {52627DEB-59C7-4D1C-83E1-A7E958DEC7BC}
+		{8B1F29D1-E7FB-4413-8A4C-9326C72A74DF} = {52627DEB-59C7-4D1C-83E1-A7E958DEC7BC}
+	EndGlobalSection
+EndGlobal

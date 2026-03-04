@@ -1,0 +1,15 @@
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/bin/Debug/net10.0/Ayws.Security.Service.Contracts.deps.json
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/bin/Debug/net10.0/Ayws.Security.Service.Contracts.dll
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/bin/Debug/net10.0/Ayws.Security.Service.Contracts.pdb
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/bin/Debug/net10.0/Ayws.Security.Service.Domain.dll
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/bin/Debug/net10.0/Ayws.Security.Service.Domain.pdb
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/obj/Debug/net10.0/Ayws.Security.Service.Contracts.csproj.AssemblyReference.cache
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/obj/Debug/net10.0/Ayws.Security.Service.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/obj/Debug/net10.0/Ayws.Security.Service.Contracts.AssemblyInfoInputs.cache
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/obj/Debug/net10.0/Ayws.Security.Service.Contracts.AssemblyInfo.cs
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/obj/Debug/net10.0/Ayws.Security.Service.Contracts.csproj.CoreCompileInputs.cache
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/obj/Debug/net10.0/Ayws.Sec.23516442.Up2Date
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/obj/Debug/net10.0/Ayws.Security.Service.Contracts.dll
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/obj/Debug/net10.0/refint/Ayws.Security.Service.Contracts.dll
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/obj/Debug/net10.0/Ayws.Security.Service.Contracts.pdb
+/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Contracts/obj/Debug/net10.0/ref/Ayws.Security.Service.Contracts.dll

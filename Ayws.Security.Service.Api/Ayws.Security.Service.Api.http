@@ -1,0 +1,6 @@
+@Ayws.Security.Service.Api_HostAddress = http://localhost:5237
+
+GET {{Ayws.Security.Service.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

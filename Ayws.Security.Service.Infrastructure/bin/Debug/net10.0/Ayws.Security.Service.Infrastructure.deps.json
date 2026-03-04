@@ -1,0 +1,73 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Ayws.Security.Service.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Ayws.Security.Service.Application": "1.0.0",
+          "Ayws.Security.Service.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Ayws.Security.Service.Infrastructure.dll": {}
+        }
+      },
+      "Ayws.Security.Service.Application/1.0.0": {
+        "dependencies": {
+          "Ayws.Security.Service.Contracts": "1.0.0",
+          "Ayws.Security.Service.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Ayws.Security.Service.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Ayws.Security.Service.Contracts/1.0.0": {
+        "dependencies": {
+          "Ayws.Security.Service.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Ayws.Security.Service.Contracts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Ayws.Security.Service.Domain/1.0.0": {
+        "runtime": {
+          "Ayws.Security.Service.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ayws.Security.Service.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ayws.Security.Service.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ayws.Security.Service.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ayws.Security.Service.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
