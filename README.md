@@ -4,9 +4,9 @@
 
 **AYWS Platform** için kimlik, erişim ve sır yönetimi servisi · Keycloak üzerine inşa edilmiştir
 
-[![.NET](https://img.shields.io/badge/.NET-9.0-512BD4?style=flat-square&logo=dotnet)](https://dotnet.microsoft.com)
+[![.NET](https://img.shields.io/badge/.NET-10.0-512BD4?style=flat-square&logo=dotnet)](https://dotnet.microsoft.com)
 [![Keycloak](https://img.shields.io/badge/Keycloak-26-4D9A9A?style=flat-square&logo=keycloak)](https://keycloak.org)
-[![EF Core](https://img.shields.io/badge/EF_Core-9.0-512BD4?style=flat-square&logo=dotnet)](https://learn.microsoft.com/ef/core)
+[![EF Core](https://img.shields.io/badge/EF_Core-10.0-512BD4?style=flat-square&logo=dotnet)](https://learn.microsoft.com/ef/core)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
 </div>
