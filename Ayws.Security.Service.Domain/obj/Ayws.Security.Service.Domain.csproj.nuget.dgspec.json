@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/Ayws.Security.Service.Domain.csproj": {}
+    "/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/Ayws.Security.Service.Domain.csproj": {}
   },
   "projects": {
-    "/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/Ayws.Security.Service.Domain.csproj": {
+    "/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/Ayws.Security.Service.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/Ayws.Security.Service.Domain.csproj",
+        "projectUniqueName": "/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/Ayws.Security.Service.Domain.csproj",
         "projectName": "Ayws.Security.Service.Domain",
-        "projectPath": "/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/Ayws.Security.Service.Domain.csproj",
+        "projectPath": "/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/Ayws.Security.Service.Domain.csproj",
         "packagesPath": "/Users/ismailcanuslu/.nuget/packages/",
-        "outputPath": "/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/",
+        "outputPath": "/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ismailcanuslu/.nuget/NuGet/NuGet.Config"

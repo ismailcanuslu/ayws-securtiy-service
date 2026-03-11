@@ -1,0 +1,17 @@
+dotnet ef migrations add InitialCreate \
+  --project Ayws.Security.Service.Infrastructure \
+  --startup-project Ayws.Security.Service.Api \
+  --context AppDbContext
+  
+dotnet ef database update \
+  --project Ayws.Security.Service.Infrastructure \
+  --startup-project Ayws.Security.Service.Api \
+  --context AppDbContext
+    
+
+  
+dotnet ef database update --project Ay.Security.Persistence --startup-project Ay.Security.Api --context AppDbContext
+
+dotnet ef database drop --project Ay.Security.Persistence --startup-project Ay.Security.Api --context AppDbContext --force
+
+dotnet ef migrations remove --project Ay.Security.Persistence --startup-project Ay.Security.Api --context AppDbContext

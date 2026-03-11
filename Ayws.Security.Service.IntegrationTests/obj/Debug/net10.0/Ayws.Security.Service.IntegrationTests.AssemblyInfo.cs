@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ayws.Security.Service.IntegrationTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcca212617221c5a6032a7f1925d6e54f1a5e624")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ayws.Security.Service.IntegrationTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ayws.Security.Service.IntegrationTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

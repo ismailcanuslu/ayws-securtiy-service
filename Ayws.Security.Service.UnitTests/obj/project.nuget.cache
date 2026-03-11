@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aHQbrq5SFcQ=",
+  "dgSpecHash": "BVtg6DNzdFI=",
   "success": true,
-  "projectFilePath": "/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.UnitTests/Ayws.Security.Service.UnitTests.csproj",
+  "projectFilePath": "/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.UnitTests/Ayws.Security.Service.UnitTests.csproj",
   "expectedPackageFiles": [
     "/Users/ismailcanuslu/.nuget/packages/coverlet.collector/6.0.4/coverlet.collector.6.0.4.nupkg.sha512",
     "/Users/ismailcanuslu/.nuget/packages/microsoft.codecoverage/17.14.1/microsoft.codecoverage.17.14.1.nupkg.sha512",

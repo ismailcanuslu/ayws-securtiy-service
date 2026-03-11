@@ -9,3 +9,15 @@
 /Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/refint/Ayws.Security.Service.Domain.dll
 /Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/Ayws.Security.Service.Domain.pdb
 /Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/ref/Ayws.Security.Service.Domain.dll
+/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/bin/Debug/net10.0/Ayws.Security.Service.Domain.deps.json
+/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/bin/Debug/net10.0/Ayws.Security.Service.Domain.dll
+/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/bin/Debug/net10.0/Ayws.Security.Service.Domain.pdb
+/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/Ayws.Security.Service.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/Ayws.Security.Service.Domain.AssemblyInfoInputs.cache
+/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/Ayws.Security.Service.Domain.AssemblyInfo.cs
+/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/Ayws.Security.Service.Domain.csproj.CoreCompileInputs.cache
+/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/Ayws.Security.Service.Domain.sourcelink.json
+/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/Ayws.Security.Service.Domain.dll
+/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/refint/Ayws.Security.Service.Domain.dll
+/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/Ayws.Security.Service.Domain.pdb
+/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Domain/obj/Debug/net10.0/ref/Ayws.Security.Service.Domain.dll

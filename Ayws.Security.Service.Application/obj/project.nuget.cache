@@ -1,8 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "7f/j34vvjTM=",
+  "dgSpecHash": "8P3EU+VKH3k=",
   "success": true,
-  "projectFilePath": "/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Application/Ayws.Security.Service.Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.Application/Ayws.Security.Service.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/ismailcanuslu/.nuget/packages/automapper/16.1.0/automapper.16.1.0.nupkg.sha512",
+    "/Users/ismailcanuslu/.nuget/packages/fluentvalidation/12.1.1/fluentvalidation.12.1.1.nupkg.sha512",
+    "/Users/ismailcanuslu/.nuget/packages/fluentvalidation.dependencyinjectionextensions/12.1.1/fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
+    "/Users/ismailcanuslu/.nuget/packages/mediatr/14.1.0/mediatr.14.1.0.nupkg.sha512",
+    "/Users/ismailcanuslu/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/ismailcanuslu/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.0/microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "/Users/ismailcanuslu/.nuget/packages/microsoft.extensions.logging.abstractions/10.0.0/microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
+    "/Users/ismailcanuslu/.nuget/packages/microsoft.extensions.options/10.0.0/microsoft.extensions.options.10.0.0.nupkg.sha512",
+    "/Users/ismailcanuslu/.nuget/packages/microsoft.extensions.primitives/10.0.0/microsoft.extensions.primitives.10.0.0.nupkg.sha512",
+    "/Users/ismailcanuslu/.nuget/packages/microsoft.identitymodel.abstractions/8.14.0/microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
+    "/Users/ismailcanuslu/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.14.0/microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg.sha512",
+    "/Users/ismailcanuslu/.nuget/packages/microsoft.identitymodel.logging/8.14.0/microsoft.identitymodel.logging.8.14.0.nupkg.sha512",
+    "/Users/ismailcanuslu/.nuget/packages/microsoft.identitymodel.tokens/8.14.0/microsoft.identitymodel.tokens.8.14.0.nupkg.sha512"
+  ],
   "logs": []
 }

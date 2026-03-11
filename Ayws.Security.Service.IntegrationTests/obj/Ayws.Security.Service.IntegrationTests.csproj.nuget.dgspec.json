@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.IntegrationTests/Ayws.Security.Service.IntegrationTests.csproj": {}
+    "/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.IntegrationTests/Ayws.Security.Service.IntegrationTests.csproj": {}
   },
   "projects": {
-    "/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.IntegrationTests/Ayws.Security.Service.IntegrationTests.csproj": {
+    "/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.IntegrationTests/Ayws.Security.Service.IntegrationTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.IntegrationTests/Ayws.Security.Service.IntegrationTests.csproj",
+        "projectUniqueName": "/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.IntegrationTests/Ayws.Security.Service.IntegrationTests.csproj",
         "projectName": "Ayws.Security.Service.IntegrationTests",
-        "projectPath": "/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.IntegrationTests/Ayws.Security.Service.IntegrationTests.csproj",
+        "projectPath": "/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.IntegrationTests/Ayws.Security.Service.IntegrationTests.csproj",
         "packagesPath": "/Users/ismailcanuslu/.nuget/packages/",
-        "outputPath": "/Users/ismailcanuslu/Documents/GitHub/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.IntegrationTests/obj/",
+        "outputPath": "/Volumes/KIOXIA/Projeler/Ay-webservices/ay-webservices-backend/ayws-security-service/Ayws.Security.Service.IntegrationTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ismailcanuslu/.nuget/NuGet/NuGet.Config"
