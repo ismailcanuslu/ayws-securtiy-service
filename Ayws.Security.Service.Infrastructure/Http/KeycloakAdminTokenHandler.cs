@@ -38,14 +38,27 @@ public class KeycloakAdminTokenHandler(IConfiguration configuration) : Delegatin
                 ?? "http://localhost:8080/realms/master/protocol/openid-connect/token";
             var clientId = configuration["KeycloakSettings:AdminClientId"] ?? "ayws-admin";
             var clientSecret = configuration["KeycloakSettings:AdminClientSecret"] ?? "";
+            var adminUsername = configuration["KeycloakSettings:AdminUsername"];
+            var adminPassword = configuration["KeycloakSettings:AdminPassword"];
 
             using var http = new HttpClient();
-            var form = new Dictionary<string, string>
-            {
-                ["grant_type"] = "client_credentials",
-                ["client_id"] = clientId,
-                ["client_secret"] = clientSecret
-            };
+
+            // AdminUsername + AdminPassword varsa password grant kullan (geliştirme ortamı).
+            // Yoksa client_credentials (üretim — service account).
+            var form = adminUsername is not null && adminPassword is not null
+                ? new Dictionary<string, string>
+                {
+                    ["grant_type"] = "password",
+                    ["client_id"] = "admin-cli",
+                    ["username"] = adminUsername,
+                    ["password"] = adminPassword
+                }
+                : new Dictionary<string, string>
+                {
+                    ["grant_type"] = "client_credentials",
+                    ["client_id"] = clientId,
+                    ["client_secret"] = clientSecret
+                };
 
             var response = await http.PostAsync(tokenUrl, new FormUrlEncodedContent(form), ct);
             response.EnsureSuccessStatusCode();

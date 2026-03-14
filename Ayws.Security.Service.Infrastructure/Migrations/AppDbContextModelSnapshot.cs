@@ -198,6 +198,10 @@ namespace Ayws.Security.Service.Infrastructure.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("character varying(100)");
 
+                    b.Property<string>("OwnerEmail")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("RealmName")
                         .IsRequired()
                         .HasMaxLength(50)

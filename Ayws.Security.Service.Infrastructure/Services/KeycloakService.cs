@@ -43,6 +43,31 @@ public class KeycloakService(
                 $"/admin/realms/{request.RealmName}/roles",
                 new { name = role }, ct);
         }
+
+        // 'account' client'ında Direct Access Grants'i aç —
+        // böylece frontend email+password ile token alabilir.
+        await EnableDirectAccessGrantsAsync(client, request.RealmName, ct);
+    }
+
+    private static async Task EnableDirectAccessGrantsAsync(
+        HttpClient client, string realmName, CancellationToken ct)
+    {
+        // Realm'daki tüm client'ları listele, 'account' olanı bul
+        var clients = await client.GetFromJsonAsync<List<KeycloakClientResult>>(
+            $"/admin/realms/{realmName}/clients?clientId=account", ct);
+
+        var accountClient = clients?.FirstOrDefault(c => c.ClientId == "account");
+        if (accountClient is null) return;
+
+        // directAccessGrantsEnabled = true ile güncelle
+        await client.PutAsJsonAsync(
+            $"/admin/realms/{realmName}/clients/{accountClient.Id}",
+            new
+            {
+                clientId = "account",
+                directAccessGrantsEnabled = true,
+                publicClient = true
+            }, ct);
     }
 
     public async Task DeleteRealmAsync(string realmName, CancellationToken ct = default)
@@ -102,6 +127,42 @@ public class KeycloakService(
                 $"/admin/realms/{request.RealmName}/users/{userId}/role-mappings/realm",
                 new[] { new { name = roleName } }, ct);
         }
+
+        return userId;
+    }
+
+    public async Task<string> RegisterUserAsync(RegisterUserRequest request, CancellationToken ct = default)
+    {
+        logger.LogInformation("Registering owner user {Email} in realm {Realm}", request.Email, request.RealmName);
+        var client = CreateAdminClient();
+
+        var response = await client.PostAsJsonAsync($"/admin/realms/{request.RealmName}/users", new
+        {
+            email = request.Email,
+            firstName = request.FirstName,
+            lastName = request.LastName,
+            username = request.Email,
+            enabled = true,
+            credentials = new[]
+            {
+                new
+                {
+                    type = "password",
+                    value = request.Password,
+                    temporary = false
+                }
+            }
+        }, ct);
+
+        response.EnsureSuccessStatusCode();
+
+        var location = response.Headers.Location?.ToString() ?? string.Empty;
+        var userId = location.Split('/').Last();
+
+        // owner rolünü ata
+        await client.PostAsJsonAsync(
+            $"/admin/realms/{request.RealmName}/users/{userId}/role-mappings/realm",
+            new[] { new { name = "owner" } }, ct);
 
         return userId;
     }
@@ -268,7 +329,7 @@ public class KeycloakService(
     {
         var client = CreateAdminClient();
         var secretResp = await client.PostAsJsonAsync<object>(
-            $"/admin/realms/{realmName}/clients/{clientId}/client-secret", null, ct);
+            $"/admin/realms/{realmName}/clients/{clientId}/client-secret", new { }, ct);
         var secret = await secretResp.Content.ReadFromJsonAsync<KeycloakClientSecret>(ct);
         return new KeycloakClientCredentials(clientId, secret?.Value ?? string.Empty);
     }
@@ -301,4 +362,5 @@ public class KeycloakService(
     private record KeycloakRoleResult(string Id, string Name, string? Description);
     private record KeycloakCredential(string Id, string Type);
     private record KeycloakClientSecret(string? Value);
+    private record KeycloakClientResult(string Id, string ClientId);
 }

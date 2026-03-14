@@ -10,6 +10,9 @@ public class TenantEntity : BaseEntity<Guid>, IAuditEntity
     /// <summary>İnsan-okunabilir görünen ad</summary>
     public string DisplayName { get; set; } = null!;
 
+    /// <summary>Hesabı oluşturan owner'ın e-postası (login lookup için)</summary>
+    public string OwnerEmail { get; set; } = null!;
+
     public TenantStatus Status { get; set; } = TenantStatus.Active;
 
     public DateTime CreatedAt { get; set; }

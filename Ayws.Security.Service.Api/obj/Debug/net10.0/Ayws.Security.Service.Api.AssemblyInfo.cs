@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ayws.Security.Service.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcca212617221c5a6032a7f1925d6e54f1a5e624")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74b7f1d4d4408dc5e81c752fd7904de68320abf4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ayws.Security.Service.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ayws.Security.Service.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

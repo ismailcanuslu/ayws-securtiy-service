@@ -1,4 +1,4 @@
-dotnet ef migrations add InitialCreate \
+dotnet ef migrations add AddedOwnerEmail \
   --project Ayws.Security.Service.Infrastructure \
   --startup-project Ayws.Security.Service.Api \
   --context AppDbContext

@@ -6,6 +6,7 @@ public record UpdateRealmSettingsRequest(string RealmName, int SessionIdleTimeou
 
 // ─── User DTOs ──────────────────────────────────────────────────────────────
 public record InviteUserRequest(string RealmName, string Email, string FirstName, string LastName, List<string> Roles);
+public record RegisterUserRequest(string RealmName, string Email, string FirstName, string LastName, string Password);
 public record KeycloakUserDto(string Id, string Email, string FirstName, string LastName, bool Enabled);
 public record KeycloakSessionDto(string Id, string IpAddress, string Browser, DateTime Started);
 
@@ -31,6 +32,7 @@ public interface IKeycloakService
 
     // Users
     Task<string> InviteUserAsync(InviteUserRequest request, CancellationToken ct = default);
+    Task<string> RegisterUserAsync(RegisterUserRequest request, CancellationToken ct = default);
     Task<List<KeycloakUserDto>> GetUsersAsync(string realmName, CancellationToken ct = default);
     Task DeleteUserAsync(string realmName, string userId, CancellationToken ct = default);
     Task DisableUserAsync(string realmName, string userId, CancellationToken ct = default);
